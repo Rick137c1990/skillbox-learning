@@ -19,31 +19,27 @@ public class Bank {
     public void transfer(String fromAccountNum, String toAccountNum, long amount) throws InterruptedException {
         long balanceOfFromAccountNum = accounts.get(fromAccountNum).getMoney();
 
-        // Проверка наличия достаточно средств на счете
         if (!hasEnoughMoney(balanceOfFromAccountNum, amount)) {
             massageOfLittleMoney();
             return;
         }
-
-        // Проверка на мошенничество для крупных сумм
+        
         if (amount > 50000 && isFraud(fromAccountNum, toAccountNum, amount)) {
             handleFraud(fromAccountNum, toAccountNum);
             return;
         }
 
-        // Проверка на заблокированные аккаунты до захвата блокировок
         if (areAccountsBlocked(fromAccountNum, toAccountNum)) {
             massageIsBlocking(fromAccountNum, toAccountNum);
             return;
         }
 
-        // Синхронизация блокировок в правильном порядке
         String firstLock = getLockOrder(fromAccountNum, toAccountNum);
         String secondLock = firstLock.equals(fromAccountNum) ? toAccountNum : fromAccountNum;
 
         synchronized (firstLock) {
             synchronized (secondLock) {
-                // После захвата блокировок, безопасно выполняем перевод
+         
                 long balanceOfToAccountNum = accounts.get(toAccountNum).getMoney();
 
                 if (isTransferPossible(fromAccountNum, toAccountNum)) {
@@ -95,7 +91,7 @@ public class Bank {
     public void showBalance(String accountNum){
         long balance = getBalance(accountNum);
         if(balance == -1){
-            System.out.println("нет такого аккаунта");
+            System.out.println("This account isn't found");
         }else {
             System.out.println(balance);
         }
@@ -124,14 +120,12 @@ public class Bank {
         accounts.putAll(newAccounts);
     }
     private void massageOfLittleMoney(){
-        System.out.println("не достаточно средств");
+        System.out.println("Insufficient funds");
     }
 
     public void massageIsBlocking(String fromAccountNum, String toAccountNum){
-        System.out.println("счет " + accounts.get(fromAccountNum).getAccNumber() + " заблокирован на причине " +
-                "подозрителного перевода");
-        System.out.println("счет " + accounts.get(toAccountNum).getAccNumber() + " заблокирован на причине " +
-                "подозрителного перевода");
+        System.out.println("The bill " + accounts.get(fromAccountNum).getAccNumber() + " blocked on the basis of a suspicious transfer");
+        System.out.println("The bill " + accounts.get(toAccountNum).getAccNumber() + " blocked on the basis of a suspicious transfer");
 
     }
 }
