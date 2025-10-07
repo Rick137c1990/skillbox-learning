@@ -1,6 +1,6 @@
 # ✈️ Airport Data Analyzer (Java Stream API & Time API)
 
-A small **Java training project** that demonstrates the use of **Streams API**, **Collections**, and **Optional** while working with the [Skillbox Airport](https://github.com/skillbox-java/airport) library.
+A small **Java training project** that demonstrates the use of **Streams API**, **Collections**, and **Optional** while working with the [Skillbox Airport](https://github.com/Rik137/StreamAPI/tree/master/lib) library.
 
 The goal is to practice functional-style programming and data processing using an airport simulation model that includes **terminals**, **aircraft**, and **flights**.
 
