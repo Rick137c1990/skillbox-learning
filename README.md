@@ -17,7 +17,7 @@ The project models a simple **online learning platform**, including entities for
 ---
 
 ## 🧩 Project Structure
-
+```java
 src/  
 └── groupId/  
 ├── Main.java # Entry point  
@@ -37,7 +37,7 @@ config/
 ├── hibernate.cfg.xml # Hibernate configuration  
 ├── getStatements.txt # SQL statements for schema creation  
 └── skillbox_dump_wfk.sql # Data dump for table population  
-
+```
 ---
 
 ## ⚙️ Technologies Used
