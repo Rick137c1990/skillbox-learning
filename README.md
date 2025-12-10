@@ -1,4 +1,5 @@
 # SwimmingPool  
+---
 This project demonstrates a simple simulation written in Java: calculating the time required to fill a swimming pool, given the filling speed of water and the drainage  (devastation) speed.  
 Description  
 The program models a pool with the following conditions:  
@@ -10,6 +11,7 @@ When the pool is full, the program prints the result:
 время наполнения бассейна составит: X мин.  
 How It Works  
 The program starts with an empty pool 
+
 ```java
 (volumeNow = 0).
 ```
