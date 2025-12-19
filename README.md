@@ -43,3 +43,5 @@ How It Works
 Each recipe uses a separate if statement with multiple conditions connected by the boolean AND (&&) operator.
 If all the conditions for a dish are satisfied, its name is printed to the console.
 You can change the ingredient quantities to test different scenarios.
+```
+The repository exists purely as a learning and demonstration artifact.
