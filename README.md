@@ -76,17 +76,22 @@ config/
 ```bash
 git clone https://github.com/your-username/hibernate-course-management.git
 cd hibernate-course-management
+```
 2. Configure Database
 Create a MySQL database:
+```
 CREATE DATABASE my_shema CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 Update credentials in:
 src/main/resources/hibernate.cfg.xml
 <property name="connection.username">root</property>
 <property name="connection.password">your_password</property>
 <property name="connection.url">jdbc:mysql://localhost:3306/my_shema?useSSL=false&amp;serverTimezone=UTC</property>
-3. Build and Run
+```
+4. Build and Run
 Compile and execute using Maven or directly from your IDE:
+```bash
 mvn clean compile exec:java -Dexec.mainClass="groupId.Main"
+```
 🧮 Example Output
 After successful execution, Hibernate will:
 Create the tables defined in getStatements.txt
@@ -94,9 +99,11 @@ Insert all data from the SQL dump
 Generate entries in the linkedpurchaselist table
 Log SQL operations to the console
 Example console output:
+```bash
 Hibernate: insert into linkedpurchaselist (student_id, course_id) values (?, ?)
 Hibernate: select * from courses
 Hibernate: commit
+```
 🧠 Educational Purpose
 This project was created as part of a Java persistence and Hibernate learning module.
 It helps understand:
@@ -106,3 +113,5 @@ How to automate linking tables using programmatic logic
 📜 License
 This project is distributed for educational purposes only.
 No license restrictions apply for non-commercial use.
+---
+The repository exists purely as a learning and demonstration artifact.
