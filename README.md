@@ -28,4 +28,6 @@ Compile and run the program from the terminal:
 ```java
 javac Main.java  
 java Main  
-``` 
+```
+---
+The repository exists purely as a learning and demonstration artifact.
