@@ -57,3 +57,6 @@ Compile and run with javac/java:
 javac com/sergey/nazarov/app/regex/PhoneCleanerRegex.java
 java com.sergey.nazarov.app.regex.PhoneCleanerRegex
 Or open the project in IntelliJ IDEA / Eclipse and run the desired class.
+```
+---
+The repository exists purely as a learning and demonstration artifact.
