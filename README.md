@@ -1,34 +1,34 @@
-# Java Thread Deadlock Example
+# Java Thread Deadlock Example  
 
-Educational Java project demonstrating a **classic deadlock** scenario using threads and `synchronized` methods.
+Educational Java project demonstrating a **classic deadlock** scenario using threads and `synchronized` methods.  
 
-The goal of this repository is not to provide production-ready code, but to clearly show how a deadlock can occur when multiple threads acquire locks in an inconsistent order.
+The goal of this repository is not to provide production-ready code, but to clearly show how a deadlock can occur when multiple threads acquire locks   in an inconsistent order.  
 
 ---
 
-## Description
+## Description  
 
-The project models two `Friend` objects throwing a ball to each other.
+The project models two `Friend` objects throwing a ball to each other.  
 
-Each `Friend` has a synchronized method `throwBallTo(Friend)`.
-When two threads call this method simultaneously on different objects, a **circular lock dependency** may occur:
+Each `Friend` has a synchronized method `throwBallTo(Friend)`.  
+When two threads call this method simultaneously on different objects, a **circular lock dependency** may occur:  
 
 * Thread A locks `Friend #1` and waits for `Friend #2`
 * Thread B locks `Friend #2` and waits for `Friend #1`
 
-Result: both threads are blocked forever.
+Result: both threads are blocked forever.  
 
-This example is intentionally minimal and deterministic enough to reliably demonstrate the problem.
+This example is intentionally minimal and deterministic enough to reliably demonstrate the problem.  
 
 ---
 
-## Project Structure
+## Project Structure  
 
-### `Friend`
+### `Friend`  
 
-Represents a participant in the interaction.
+Represents a participant in the interaction.  
 
-**Fields**
+**Fields**  
 
 * `name` — immutable identifier of the friend
 
@@ -47,37 +47,37 @@ Creates two `Friend` instances and starts two threads that call `throwBallTo()` 
 
 ---
 
-## How to Run
+## How to Run  
 
-Compile the sources:
+Compile the sources:  
 
 ```bash
 javac Friend.java Loader.java
 ```
 
-Run the program:
+Run the program:  
 
 ```bash
 java Loader
 ```
 
-In most runs, the application will freeze due to a deadlock.
+In most runs, the application will freeze due to a deadlock.  
 
 ---
 
-## Key Concepts Demonstrated
+## Key Concepts Demonstrated  
 
-* Java threads
-* Intrinsic locks (`synchronized`)
-* Circular wait condition
-* Deadlocks in concurrent programming
+* Java threads  
+* Intrinsic locks (`synchronized`)  
+* Circular wait condition  
+* Deadlocks in concurrent programming  
 
 ---
 
-## Notes
+## Notes  
 
-* The recursive call inside the synchronized method is intentional and used only for demonstration purposes.
-* This code **must not** be used as a design reference for real applications.
+* The recursive call inside the synchronized method is intentional and used only for demonstration purposes.  
+* This code **must not** be used as a design reference for real applications.  
 
-The repository exists purely as a learning and demonstration artifact.
+The repository exists purely as a learning and demonstration artifact.  
 
