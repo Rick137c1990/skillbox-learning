@@ -1,16 +1,16 @@
-# Booleans — Recipe Ingredients Checker
+# Booleans — Recipe Ingredients Checker  
 
-## Goal
-Practice writing conditional statements with multiple boolean expressions.
+## Goal  
+Practice writing conditional statements with multiple boolean expressions.  
 
-## Task
-In the given project, write code that checks whether there are enough ingredients to prepare certain dishes.
+## Task  
+In the given project, write code that checks whether there are enough ingredients to prepare certain dishes.  
 
 You are given six variables representing the quantities of different ingredients.  
 Write `if` statements that verify the amount of ingredients for each recipe.  
-If the ingredients are sufficient, print the name of the dish.
+If the ingredients are sufficient, print the name of the dish.  
 
-## Variables
+## Variables  
 ```java
 int milkAmount = 2000;   // ml
 int powderAmount = 300;  // g
@@ -44,4 +44,4 @@ Each recipe uses a separate if statement with multiple conditions connected by t
 If all the conditions for a dish are satisfied, its name is printed to the console.
 You can change the ingredient quantities to test different scenarios.
 ```
-The repository exists purely as a learning and demonstration artifact.
+The repository exists purely as a learning and demonstration artifact.  
