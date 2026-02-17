@@ -1,16 +1,16 @@
-# Email List CLI
+# Email List CLI  
 
 A simple Java console application that allows you to manage a list of email addresses.  
-The program validates input, stores only properly formatted emails, and can display them in a sorted list.
+The program validates input, stores only properly formatted emails, and can display them in a sorted list.  
 
 ---
 
-## Features
+## Features  
 
 - **Add emails**: Validate email addresses before saving.  
 - **List emails**: Display all stored emails in alphabetical order.  
 - **Case insensitive**: Emails are stored in lowercase to avoid duplicates.  
-- **Simple CLI**: Interactive command-line interface with basic commands.
+- **Simple CLI**: Interactive command-line interface with basic commands.  
 
 ---
 
@@ -28,39 +28,39 @@ The program validates input, stores only properly formatted emails, and can disp
 
 - `LIST` — Show all saved emails in sorted order.  
 
-- `0` — Exit the program.
+- `0` — Exit the program.  
 
 ---
 
-## Email Validation Rules
+## Email Validation Rules  
 
-The email must match the following pattern:
+The email must match the following pattern:  
 
-[A-Za-z0-9]+@[A-Za-z0-9]+[.][A-Za-z]{2,4}
+[A-Za-z0-9]+@[A-Za-z0-9]+[.][A-Za-z]{2,4}  
 
-That means:
+That means:  
 - Only Latin letters and digits are allowed.  
 - Domain names cannot contain special symbols.  
-- Top-level domain (TLD) must be 2–4 letters (like `.ru`, `.com`, `.info`).
+- Top-level domain (TLD) must be 2–4 letters (like `.ru`, `.com`, `.info`).  
 
 ---
 
-## Example Session
+## Example Session  
 
-введите команду или "0"
-ADD John@example.com
-введите команду или "0"
-ADD invalid@@mail
-Неверный формат email
-введите команду или "0"
-LIST
-john@example.com
-введите команду или "0"
-0
+введите команду или "0"  
+ADD John@example.com  
+введите команду или "0"  
+ADD invalid@@mail  
+Неверный формат email  
+введите команду или "0"  
+LIST  
+john@example.com  
+введите команду или "0"  
+0  
 
 ---
 
-## Project Structure
+## Project Structure  
 ```java
 practice/   
 ├── EmailList.java # Class for storing and managing emails <br>
@@ -68,19 +68,19 @@ practice/
 ```
 ---
 
-## How to Run
+## How to Run  
 
 1. Clone this repository or copy the source files.  
-2. Compile the project:
+2. Compile the project:  
    ```bash
    javac practice/*.java
-Run the program: 
+Run the program:  
 ```java
 java practice.Main
 ```
-Notes
-This project is created for learning purposes.
-Validation is very basic and does not cover all real-world email formats.
-Can be extended with better regex or additional features.
+Notes  
+This project is created for learning purposes.  
+Validation is very basic and does not cover all real-world email formats.  
+Can be extended with better regex or additional features.  
 ---
-The repository exists purely as a learning and demonstration artifact.
+The repository exists purely as a learning and demonstration artifact.  
