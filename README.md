@@ -2,7 +2,7 @@
 
 ### 📌 Description  
 
-#### A simple Java program that prints all pairs of factors for a given number.The program takes an integer as input and finds every combination of two numbers whose product equals the input.
+#### A simple Java program that prints all pairs of factors for a given number.The program takes an integer as input and finds every combination of two numbers whose product equals the input.  
 ---
 ## 🚀 Example  
 Input:  
@@ -24,10 +24,10 @@ Compile:
 javac Main.java  
 Run:  
 java Main  
-Enter a number and see the result. 
+Enter a number and see the result.  
 ## 💡 Possible improvements   
 Remuve duplicates (e.g. print 3 * 4 only once).  
 Add support for negative numbers.  
 ---
-The repository exists purely as a learning and demonstration artifact.
+The repository exists purely as a learning and demonstration artifact.  
 
