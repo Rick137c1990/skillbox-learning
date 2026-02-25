@@ -40,15 +40,15 @@ config/
 ```
 ---
 
-## ⚙️ Technologies Used
+## ⚙️ Technologies Used  
 
-| Component | Technology |
-|------------|-------------|
-| Language | Java 17+ |
-| ORM | Hibernate 5.x |
-| Database | MySQL 8.x |
-| Build Tool | Maven |
-| JPA | javax.persistence annotations |
+| Component | Technology |  
+|------------|-------------|  
+| Language | Java 17+ |  
+| ORM | Hibernate 5.x |  
+| Database | MySQL 8.x |  
+| Build Tool | Maven |  
+| JPA | javax.persistence annotations |  
 
 ---
 
