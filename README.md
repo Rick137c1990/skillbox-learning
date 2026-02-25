@@ -52,21 +52,21 @@ config/
 
 ---
 
-## 🧠 How It Works
+## 🧠 How It Works  
 
 1. **Schema Initialization:**  
-   The class `FactoryBuildTablesAndAddInfo` reads SQL statements from `config/getStatements.txt` and executes them using Hibernate sessions.
+   The class `FactoryBuildTablesAndAddInfo` reads SQL statements from `config/getStatements.txt` and executes them using Hibernate sessions.  
 
 2. **Data Population:**  
-   The data from `config/skillbox_dump_wfk.sql` is inserted into the database. Duplicate entries are ignored using `INSERT IGNORE`.
+   The data from `config/skillbox_dump_wfk.sql` is inserted into the database. Duplicate entries are ignored using `INSERT IGNORE`.  
 
 3. **Link Table Generation:**  
-   The method `addInfoToLinkedPurchaseList()` scans the `Subscription` table and automatically fills the `LinkedPurchaseList` table with unique pairs of `(student_id, course_id)`.
+   The method `addInfoToLinkedPurchaseList()` scans the `Subscription` table and automatically fills the `LinkedPurchaseList` table with unique pairs   of `(student_id, course_id)`.  
 
 4. **Entity Mapping:**  
-   - Each entity corresponds to a database table.
-   - Composite keys are defined via `@EmbeddedId` and `@Embeddable` classes.
-   - Relationships (`@ManyToOne`, `@JoinColumn`, `@Enumerated`) are used where applicable.
+   - Each entity corresponds to a database table.  
+   - Composite keys are defined via `@EmbeddedId` and `@Embeddable` classes.  
+   - Relationships (`@ManyToOne`, `@JoinColumn`, `@Enumerated`) are used where applicable.  
 
 ---
 
