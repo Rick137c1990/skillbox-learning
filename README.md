@@ -1,11 +1,11 @@
-# 🏫 Hibernate Course Management System
+# 🏫 Hibernate Course Management System  
 
-A **Java + Hibernate** educational project that demonstrates working with **relational databases**, **composite primary keys**, and **entity relationships**.  
-The project models a simple **online learning platform**, including entities for students, teachers, courses, subscriptions, and purchase lists.
+A **Java + Hibernate** educational project that demonstrates working with **relational databases**, **composite primary keys**, and **entity  relationships**.  
+The project models a simple **online learning platform**, including entities for students, teachers, courses, subscriptions, and purchase lists.  
 
 ---
 
-## 🚀 Features
+## 🚀 Features  
 
 - Entity mapping using **JPA annotations**  
 - Composite keys with `@Embeddable` and `@EmbeddedId`  
@@ -16,7 +16,7 @@ The project models a simple **online learning platform**, including entities for
  
 ---
 
-## 🧩 Project Structure
+## 🧩 Project Structure  
 ```java
 src/  
 └── groupId/  
