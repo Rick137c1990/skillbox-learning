@@ -10,7 +10,7 @@ The simulation calculates how many minutes are required to completely fill the p
 When the pool is full, the program prints the result:  
 время наполнения бассейна составит: X мин.  
 How It Works  
-The program starts with an empty pool 
+The program starts with an empty pool  
 
 ```java
 (volumeNow = 0).
